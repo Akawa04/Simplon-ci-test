@@ -1,0 +1,25 @@
+<table class="table">
+    <thead>
+       <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nom</th>
+        <th scope="col">Prénom</th>
+        <th scope="col">Téléphone</th>
+        <th scope="col">Email</th>
+        <th>Action</th>
+       </tr>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let part of participants">
+            <th scope="row">{{part.id}}</th>
+            <td>{{part.Nom}}</td>
+            <td>{{part.Prenom}}</td>
+            <td>{{part.Telephone}}</td>
+            <td>{{part.Email}}</td>
+            <td><button class="btn btn-danger btn-sm" (click)="deleteData(part.id)">Supprimer</button></td>
+            <td><button class="btn btn-warning btn-sm mx-2" routerLink="edit/{{part.id}}">Modifier</button></td>
+
+        </tr>
+    </tbody>
+</table>
