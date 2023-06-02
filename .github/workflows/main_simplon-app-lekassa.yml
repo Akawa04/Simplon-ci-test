@@ -56,5 +56,5 @@ jobs:
         with:
           app-name: 'Simplon-app-lekassa'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_B95AB40764ED4B51AF402B64F90244D0 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_30F07835BCDC4C0DB3C5861E5E39B4C5 }}
           package: .
